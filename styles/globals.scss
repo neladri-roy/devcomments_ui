@@ -1,3 +1,5 @@
+@import '../components/Nav/Nav.scss';
+
 html,
 body {
   padding: 0;
@@ -11,8 +13,22 @@ a {
   text-decoration: none;
 }
 
+a:hover{
+  color: #0070f3;
+  transition: ease-in 1s;
+}
+
+
+
 * {
   box-sizing: border-box;
+  background: #f1f3f5;
+}
+
+
+.app_wrapper {
+  margin: 0 auto;
+  max-width: 740px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,7 +36,7 @@ a {
     color-scheme: dark;
   }
   body {
-    color: white;
-    background: black;
+    color: gray;
+    background: white;
   }
 }
